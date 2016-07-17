@@ -1,0 +1,16 @@
+version: '2'
+services:
+  dns:
+    image: 'cirocosta/expose-edns'
+    networks:
+      bridge:
+      testnet:
+        aliases: 
+          - 'dns'
+  dns:
+    image: 'cirocosta/expose-edns'
+    networks:
+      bridge:
+      testnet:
+        aliases: 
+          - 'dns'

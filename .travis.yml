@@ -1,0 +1,12 @@
+language: generic
+
+services:
+  - docker
+
+install:
+  - docker pull cirocosta/alpine-dig
+  - docker pull cirocosta/expose-edns
+  - docker pull nginx:1.10.1-alpine
+
+script:
+  ./test.sh
