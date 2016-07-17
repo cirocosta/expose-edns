@@ -8,13 +8,8 @@ This image uses `socat` to expose that server (which listens on `127.0.0.11`) on
 
 ## Usage
 
-```sh
-docker network create mynetwork
+See `./test.sh`
 
-docker run -d --net=mynetwork --name=alpine-container alpine sleep 99d
-docker run -d --net=mynetwork -p "53:53/udp" cirocosta/expose-edns 
-
-nslookup alpine-container localhost
-``` 
+[![Build Status](https://travis-ci.org/cirocosta/expose-edns.svg?branch=master)](https://travis-ci.org/cirocosta/expose-edns)
 
 
